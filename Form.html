@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        table {
+            margin: auto;
+            background-color: rgb(224, 204, 182);
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            width: 40%;
+            height: 25px;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Registration Form</h1>
+        <table>
+            <tr>
+                <th><label for="fname">Enter Your First Name</label></th>
+                <td><input type="text" name="username" id="fname" placeholder="First Name" required autofocus
+                        maxlength="20"></td>
+            </tr>
+            <tr>
+                <th><label for="lname">Enter Your Last Name</label></th>
+                <td><input type="text" name="username" id="lname" required placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <th><label for="password">Enter Your Password</label></th>
+                <td><input type="password" name="password" id="password" required minlength="8" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <th><label for="ReEnter">ReEnter Your Password</label></th>
+                <td><input type="password" name="confirm password" id="ReEnter" required minlength="8" placeholder="Confirm Password"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Enter Your Email</label></th>
+                <td><input type="email" name="email" id="email" required placeholder="Email"></td>
+            </tr>
+            <tr>
+                <th><label for="mobile">Enter Your Mobile Number</label></th>
+                <td><input type="number" name="" id="mobile" required placeholder="Telephone"></td>
+            </tr>
+            <tr>
+                <th><label for="address">Enter Your Address</label></th>
+                <td><textarea name="address" id="address" cols="27" rows="10" placeholder="Address..."></textarea></td>
+            </tr>
+            <tr>
+                <th>Select Your Gender</th>
+                <td><label for="m">Male</label>
+                    <input type="radio" name="Gender" id="m" value="Male">
+                    <label for="f">Female</label>
+                    <input type="radio" name="Gender" id="f" value="Female">
+                </td>
+            </tr>
+            <tr>
+                <th>Select Sports You Love</th>
+                <td><label for="c">Cricket</label>
+                    <input type="checkbox" name="Hobbies" id="c" value="Cricket">
+                    <label for="F">Football</label>
+                    <input type="checkbox" name="Hobbies" id="F" value="Football">
+                    <label for="h">Hockey</label>
+                    <input type="checkbox" name="Hobbies" id="h" value="Hockey">
+                </td>
+            </tr>
+            <tr>
+                <th>Select Your D.O.B</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Select Your Country</th>
+                <td>
+                    <select name="Your Country">
+                        <option selected disabled>Select Your Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="USA">USA</option>
+                        <option value="Chaina">China</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload Image</th>
+                <td><input type="file" name="Profile Picture" accept=".jpg " required ></td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" name="Register" id="" value="Register">
+                    <input type="submit" name="Reset" id="" value="Reset">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
